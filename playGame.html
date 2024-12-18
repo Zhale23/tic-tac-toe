@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Handjet:wght@100..900&family=Shizuru&family=Slackey&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Slackey&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Handjet:wght@100..900&family=Slackey&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My game</title>
+    <link rel="stylesheet" href="css/gameStyle.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1>TIC TAC TOE</h1>
+    </div>
+    <div class="message">
+        <p>REMEMBER! the first player to complete five rounds wins the game!</p>
+    </div>
+    <div class="containerAll">
+        <div class="player-1">
+            <div class="img-container">
+                <h1 class="icon-player">X</h1>
+            </div>
+            <div class="name-container">
+                <div id="showName1"></div>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="6" r="4"/><path d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z"/></g></svg>
+            </div>
+            <div class="rounds">
+                <p>Rounds won:</p> <p id="rounds-won-1"></p>
+            </div>
+        </div>
+        <div id="game-board" class="table">
+            <div class="cell player" id="cell-0"></div>
+            <div class="cell player" id="cell-1"></div>
+            <div class="cell player" id="cell-2"></div>
+            <div class="cell player" id="cell-3"></div>
+            <div class="cell player" id="cell-4"></div>
+            <div class="cell player" id="cell-5"></div>
+            <div class="cell player" id="cell-6"></div>
+            <div class="cell player" id="cell-7"></div>
+            <div class="cell player" id="cell-8"></div>
+        </div>
+        <div class="player-2">
+            <div class="img-container">
+                <h1 class="icon-player">O</h1>
+            </div>
+            <div class="name-container">
+                <div id="showName2"></div>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="6" r="4"/><path d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z"/></g></svg>
+            </div>
+            <div class="rounds">
+                <p>Rounds won: <p id="rounds-won-2"></p></p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M21 12h-17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12l7 7M3 12l7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg>
+        <button class="btn" onclick="goBack()">GO BACK</button>
+        <button class="btn-restart btn">RESTART GAME</button>
+    </div>
+
+    <div id="fondoOscuro">
+    </div>
+    <div id="miVentana">
+        <div class="row mb-4">
+            <div class="col">
+                <h1 class="winner"></h1>
+        <button onclick="cerrarVentana()" class="close-btn btn">Cerrar</button>
+        <img src="img/emojipng.com-49923.png" alt="" srcset="">
+    </div>
+    <script src="js/scriptGame.js"></script>
+</body>
+</html>

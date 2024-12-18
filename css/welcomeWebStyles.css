@@ -1,0 +1,56 @@
+/**WELCOME WEB**/
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #271d78;
+}
+
+
+.allContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.title{
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 5em;
+    margin-bottom: 0;
+    color: #8E7FFE;
+}
+.xxo{
+    font-size: 7em;
+    font-family: "Finger Paint", sans-serif;;
+    margin-top: 0;
+    margin-bottom: 10%;
+    color: #FFDE59;
+}
+
+.First-btn button{
+    background-color:#FF66C4 ;
+    padding: 15px;
+    padding-inline: 100px;
+    border-radius: 50px;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: "Handjet", sans-serif;
+    letter-spacing: 6px;
+}
+.First-btn a{
+    color: black;
+    text-decoration: none;
+}
+.First-btn button:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: #d22e93;
+}

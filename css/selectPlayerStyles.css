@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5044a6;
+    text-align: center;
+}
+
+.title-container h1{
+        font-family: "Slackey", sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        font-size: 3em;
+        margin-bottom: 0;
+        color: #ffffff;
+        text-align: center;
+
+}
+.line{
+    width: 450px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-left: 20%;
+}
+.items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 55vw;
+}
+.player-1, .player-2{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #4637B8;
+    border: solid 10px #0B0728;
+}
+.img-container{
+    height: 70%;
+    background-color: #1D1844;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15%;
+}
+.name-container input{
+    width: 85%;
+    border-radius: 20px;
+    height: 35px;
+    border: solid 1px black;
+    color: white;
+    background-color: #1D1844;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+.name-container{
+    padding: 0;
+    display: flex;
+    width: 15vw;
+}
+.name-container input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.icon{
+    margin-left: 5px;
+}
+.icon-player{
+    font-family:verdana;
+    font-weight: normal;
+    font-size:9em;
+    margin-top: 0px;
+    color:rgb(255, 0, 0);
+    text-shadow: 3px  0px 0px black,
+    0px  3px 0px black,
+   -3px  0px 0px black,
+    0px -3px 0px black;
+}
+.player-2 .icon-player{
+    color: green;
+}
+
+.vs-container h1{
+    color: white;
+    font-family: "Slackey", sans-serif;
+    font-weight: normal;
+    font-size: 4em;
+    
+}
+
+footer button{
+    background-color:#FF66C4 ;
+    padding: 10px;
+    padding-inline: 50px;
+    border-radius: 50px;
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: "Handjet", sans-serif;
+    letter-spacing: 6px;
+    margin-top: 5%;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer button:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: #d22e93;
+}

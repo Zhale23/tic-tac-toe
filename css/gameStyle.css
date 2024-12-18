@@ -1,0 +1,229 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5044a6;
+}
+
+.containerAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.title-container h1{
+    font-family: "Slackey", sans-serif;
+    font-style: normal;  
+    font-size: 3em;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.message{
+    background-color: #FF66C4;
+    border-radius: 10px;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20px;
+    letter-spacing: 2px;
+    margin-top: 1%;
+}
+
+.player-1, .player-2{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: #4637B8;
+    border: solid 10px #0B0728;
+}
+.img-container{
+    height: 70%;
+    background-color: #1D1844;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+#showName1, #showName2{
+    width: 85%;
+    border-radius: 20px;
+    height: 20px;
+    border: solid 1px black;
+    color: white;
+    background-color: #1D1844;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 0;
+
+}
+
+.name-container{
+    padding: 0;
+    display: flex;
+    width: 15vw;
+}
+
+.icon-player{
+    font-family:verdana;
+    font-weight: normal;
+    font-size:9em;
+    margin-top: 0px;
+    color:rgb(255, 0, 0);
+    text-shadow: 3px  0px 0px black,
+    0px  3px 0px black,
+   -3px  0px 0px black,
+    0px -3px 0px black;
+}
+.player-2 .icon-player{
+    color: green;
+}
+
+/**BOARD GAME STYLES**/
+#game-board{
+    border: 2px solid black;
+    background-color: #0B0728;
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    height: 325px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.cell{
+    width: 100px;
+    background-color: #4637B8;
+    height: 100px;
+    border: 2px solid black;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+}
+.btn-container svg{
+    margin-top: 30px;
+}
+
+.btn{
+    margin-right: 30px;
+    background-color:#FF66C4 ;
+    padding: 10px;
+    padding-inline: 50px;
+    border-radius: 50px;
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: "Handjet", sans-serif;
+    letter-spacing: 4px;
+    margin-top: 5%;
+}
+
+.btn:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: #d22e93;
+}
+.player{
+    font-size: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-shadow: 3px  0px 0px black,
+    0px  3px 0px black,
+   -3px  0px 0px black,
+    0px -3px 0px black;
+}
+
+.redPlayer{
+    color:rgb(255, 0, 0);
+}
+.greenPlayer{
+    color: green;
+}
+
+.rounds{
+    color: rgb(19, 0, 36);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+    padding-top: 0;
+    margin-bottom: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#rounds-won-1, #rounds-won-2{
+    font-size: 1.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-shadow: 3px  0px 0px black,
+    0px  3px 0px black,
+   -3px  0px 0px black,
+    0px -3px 0px black;
+}
+#rounds-won-1{
+    color: red;
+}
+#rounds-won-2{
+    color: green;
+}
+
+
+#miVentana {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 30%;
+    padding: 30px;
+    background-color: #5044a6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid 5px #ffffff;
+    z-index: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+}
+
+#miVentana img{
+    width: 20%;
+    height: 20%;
+    margin-left: 150px;
+}
+
+#fondoOscuro {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.icon{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
