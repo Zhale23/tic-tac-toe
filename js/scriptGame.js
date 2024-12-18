@@ -157,7 +157,6 @@ function checkWinner() {
 
 // Reiniciar el juego
 restart.addEventListener('click', () => {
-    alert('holi')
     // Reiniciar el tablero gráfico
     cells.forEach(cell => (cell.textContent = ''));
 
